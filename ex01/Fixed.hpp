@@ -12,7 +12,6 @@ class Fixed{
         Fixed(const Fixed &cp);
 
         Fixed& operator=(const Fixed &cp);
-        std::ostream& operator<<(std::ostream& os);
         ~Fixed();
         int getRawBits(void) const;
         void setRawBits(int const raw);
