@@ -11,8 +11,6 @@ class Fixed{
         Fixed(const float value);
         Fixed(const Fixed &cp);
 
-        // operator overloading
-
         Fixed& operator=(const Fixed &cp);
         std::ostream& operator<<(std::ostream& os);
         ~Fixed();
