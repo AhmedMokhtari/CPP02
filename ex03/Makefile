@@ -2,14 +2,14 @@ NAME = fixed
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-OBJ = main.o Fixed.o 
+OBJ = main.o Fixed.o Point.o bsp.o
 
 all : $(NAME)
 
 $(NAME) : $(OBJ)
 	c++ $(CPPFLAGS) $(OBJ) -o $(NAME)
 
-%.o : %.cpp Fixed.hpp
+%.o : %.cpp Fixed.hpp Point.hpp
 	c++ -c $(CPPFLAGS) $< -o $@
 
 clean : 

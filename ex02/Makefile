@@ -9,7 +9,7 @@ all : $(NAME)
 $(NAME) : $(OBJ)
 	c++ $(CPPFLAGS) $(OBJ) -o $(NAME)
 
-%.o : %.cpp fixed.hpp
+%.o : %.cpp Fixed.hpp
 	c++ -c $(CPPFLAGS) $< -o $@
 
 clean : 
