@@ -34,3 +34,10 @@ Point::~Point(){
     std::cout << "Destructor called" << std::endl;
 
 }
+
+Fixed Point::get_x() const{
+    return this->x;
+}
+Fixed Point::get_y() const{
+ return this->y;
+}
