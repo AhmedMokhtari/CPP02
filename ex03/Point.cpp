@@ -11,22 +11,14 @@ Point::Point(const float x, const float y):x(x), y(y){
 
 Point::Point(const  Point &cp){
     std::cout << "Copy constructor called" << std::endl;
-
-    // if (cp != *this)
-    // {
-        this->x = cp.x;
-        this->y = cp.y;
-    // }
+    this->x = cp.x;
+    this->y = cp.y;
 }
 
 Point &Point::operator=(const Point &cp){
     std::cout << "Assign operrator  called" << std::endl;
-
-    // if (cp != *this)
-    // {
-        this->x = cp.x;
-        this->y = cp.y;
-    // }
+    this->x = cp.x;
+    this->y = cp.y;
     return *this;
 }
 

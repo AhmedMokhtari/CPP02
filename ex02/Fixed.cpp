@@ -34,7 +34,6 @@ Fixed& Fixed::operator=(const Fixed &cp)
     return *this;
 }
 
-// operator 
 std::ostream & operator<< (std::ostream &os, const Fixed &f)
 {
     os << f.toFloat();
@@ -173,7 +172,6 @@ Fixed &Fixed::min(Fixed &f1, Fixed &f2)
 
 Fixed &Fixed::max(Fixed &f1, Fixed &f2)
 {
-    std::cout << "no is called \n";
     if (f1.value > f2.value)
         return f1;
     return f2;
@@ -188,7 +186,6 @@ const Fixed &Fixed::min(const Fixed &f1, const Fixed &f2)
 
 const Fixed &Fixed::max(const Fixed &f1, const Fixed &f2)
 {
-    std::cout << "Const is called \n";
     if (f1.value > f2.value)
         return f1;
     return f2;
